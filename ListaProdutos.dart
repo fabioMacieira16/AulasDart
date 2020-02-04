@@ -1,20 +1,20 @@
-import "dart.io";
+import 'dart:io';
 
 main(){
-    List<Sring> produtos  = [];
+    List<String> produtos  = [];
     bool condicao = true;
 
-    print(==== Adcione um Produto === );
-    strig text = stdin.readLineSinc();
+    print("==== Adicione um Produto ====");
+    String text = stdin.readLineSync();
     if(text == "sair"){
-        print(=== TERMINOU O PROGRAMA == );
+        print("==== TERMINOU O PROGRAMA ==== ");
         condicao = false;
-    }else if( text == imprimir ){
+    }else if( text == "imprimir" ){
         print(produtos);
-        print("\n");x
+        print("\n");
     }else{
         produtos.add(text);
-        print("\x1b[2J]\x1B[0;0H]");
+        //print("\x1b[2J]\x1B[0;0H]");
     }
 
 }
